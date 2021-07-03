@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:10%">
+  <h3 class="w3-bar-item"><img src="ima.png" alt="Car" style="width:90%"></h3>
+  <a href="#" class="w3-bar-item w3-button"><img src="ima2.png" alt="student" style="width:90%"></a>
+  <a href="#" class="w3-bar-item w3-button"><img src="ima3.png" alt="student" style="width:90%"></a>
+  <a href="#" class="w3-bar-item w3-button"><img src="ima1.png" alt="student" style="width:90%"></a>
+</div>
+
+<!-- Page Content -->
+<div style="background-color:white;height:80px;">
+
+</div>
+<div style="background-color:WhiteSmoke;height:550px;">
+<style>
+.accordion {
+  
+  
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  margin-left:150px;
+  background-color:WhiteSmoke;
+  font-size: 15px;
+  transition: 0.4s;
+  color:grey;
+}
+
+
+.panel {
+  padding: 0 18px;
+ 
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+</style>
+<button class="accordion">&#9664;<strong>Videos</strong></button>
+<div class="panel">
+  <p align="left">
+  <input type="text" id="url" type="search" style="width:70%; border:none;color:white;margin-left:150px;" placeholder="Insert Url Here"><br><br></p>
+   <div style="text-align:center"><strong>or</strong></div>
+   <div style=" width: 260px; height: 160px; margin-top: 50px;margin-left:150px;background-color:White; text-align:center">
+    <style>
+
+
+        div.fakefile {
+            position: center;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+           width: 260px;
+           height: 160px;
+        }
+        
+        input.file {
+            position: relative;
+            text-align: right;
+            -moz-opacity:0 ;
+            filter:alpha(opacity: 0);
+            opacity: 0;
+            z-index: 2;
+            
+        }
+        </style>
+        <div >
+           <input type="file" class="file" accept="video/*" />
+            <div class="fakefile">
+            
+           <strong>Upload</strong>
+           
+           <div>
+          </div> 
+   <span style="text-align:center;margin-top:100px;"><br/><br/><br/>
+
+</script>
+</div>
+
+
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+$('.file-upload').file_upload();
+</script>
+
+</div>
+      
+</body>
+</html>
